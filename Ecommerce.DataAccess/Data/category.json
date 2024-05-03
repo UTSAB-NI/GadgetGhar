@@ -1,0 +1,10 @@
+[{"Id":1,"Name":"Cadillac","CreatedAt":"3/17/2024","UpdatedAt":"5/7/2023"},
+{"Id":2,"Name":"Subaru","CreatedAt":"2/14/2024","UpdatedAt":"7/25/2023"},
+{"Id":3,"Name":"Ford","CreatedAt":"10/8/2023","UpdatedAt":"12/4/2023"},
+{"Id":4,"Name":"BMW","CreatedAt":"8/7/2023","UpdatedAt":"4/12/2024"},
+{"Id":5,"Name":"Ford","CreatedAt":"5/16/2023","UpdatedAt":"5/30/2023"},
+{"Id":6,"Name":"BMW","CreatedAt":"4/9/2024","UpdatedAt":"10/30/2023"},
+{"Id":7,"Name":"Dodge","CreatedAt":"6/27/2023","UpdatedAt":"2/25/2024"},
+{"Id":8,"Name":"Nissan","CreatedAt":"10/9/2023","UpdatedAt":"6/6/2023"},
+{"Id":9,"Name":"Lexus","CreatedAt":"12/13/2023","UpdatedAt":"8/8/2023"},
+{"Id":10,"Name":"Cadillac","CreatedAt":"6/23/2023","UpdatedAt":"8/9/2023"}]

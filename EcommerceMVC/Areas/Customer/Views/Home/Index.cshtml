@@ -1,0 +1,689 @@
+﻿@model IEnumerable<Product>
+<!--End header-->
+<main class="main ">
+    <section class="home-slider style-2 position-relative mb-50">
+        <div class="container ">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8">
+                    <div class="home-slide-cover">
+                        <div class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1">
+                            <div class="single-hero-slider single-animation-wrap" style="background-image: url(assets/imgs/slider/nothing.jpg)">
+                                <div class="slider-content">
+                                    <h1 class="display-2 mb-40 ">
+                                        Nothing Phone<br />
+                                        Big discount
+                                    </h1>
+                                    <p class="mb-65 text-white">Save up to 50% </p>
+                                    <a class='btn btn-xs' href='shop-grid-right.html'>Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                                    
+                                </div>
+                            </div>
+                            <div class="single-hero-slider single-animation-wrap" style="background-image: url(assets/imgs/slider/s24.jpg)">
+                                <div class="slider-content">
+                                    <h1 class="display-2 mb-40">
+                                        Samsung Galaxy<br />
+                                        S24 Ultra
+                                    </h1>
+                                    <a class='btn btn-xs' href='shop-grid-right.html'>Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-arrow hero-slider-1-arrow"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-md-30 ">
+                    <div class="banner-img style-3 animated animated">
+                        <div class="banner-text mt-50">
+                            @* <h2 class="mb-50">
+                                Delivered <br />
+                                to
+                                <span class="text-brand">
+                                    your<br />
+                                    home
+                                </span>
+                            </h2> *@
+                            <a class='btn btn-xs' href='shop-grid-right.html'>Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End hero slider-->
+    <section class="banners mb-25 ">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-4 col-md-6">
+                    <div class="banner-img">
+                        <img src="assets/imgs/banner/macbook.jpg" alt="" />
+                        <div class="banner-text">
+                            @* <h4 class="text-white">
+                                Apple <br />MackBook Pro<br />
+                                Pro
+                            </h4> *@
+                            <a class='btn btn-xs mt-200' >Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="banner-img">
+                        <img src="assets/imgs/banner/headphone.png" alt="" />
+                        <div class="banner-text">
+                            @* <h4>
+                                Make your Breakfast<br />
+                                Healthy and Easy
+                            </h4> *@
+                            <a class='btn btn-xs mt-200' href='shop-grid-right.html'>Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-md-none d-lg-flex">
+                    <div class="banner-img mb-sm-0">
+                        <img src="assets/imgs/banner/tv2.jpg" alt="" />
+                        <div class="banner-text">
+                            @* <h4>The best Organic <br />Products Online</h4> *@
+                            <a class='btn btn-xs' href='shop-grid-right.html'>Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End banners-->
+    <section class="product-tabs section-padding position-relative p-30">
+        <div class="container">
+            <div class="section-title style-2">
+                <h3>Products</h3>
+                <ul class="nav nav-tabs links" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="nav-tab-one" data-bs-toggle="tab" data-bs-target="#tab-one" type="button" role="tab" aria-controls="tab-one" aria-selected="true">All</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="nav-tab-two" data-bs-toggle="tab" data-bs-target="#tab-two" type="button" role="tab" aria-controls="tab-two" aria-selected="false">Laptop</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="nav-tab-three" data-bs-toggle="tab" data-bs-target="#tab-three" type="button" role="tab" aria-controls="tab-three" aria-selected="false">Mobiles</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="nav-tab-four" data-bs-toggle="tab" data-bs-target="#tab-four" type="button" role="tab" aria-controls="tab-four" aria-selected="false">Earbud</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="nav-tab-five" data-bs-toggle="tab" data-bs-target="#tab-five" type="button" role="tab" aria-controls="tab-five" aria-selected="false">Smartwatch</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="nav-tab-six" data-bs-toggle="tab" data-bs-target="#tab-six" type="button" role="tab" aria-controls="tab-six" aria-selected="false">Television</button>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!--End nav-tabs-->
+            <div class="tab-content mb-10" id="myTabContent">
+                <div class="tab-pane fade show active" id="tab-one" role="tabpanel" aria-labelledby="tab-one">
+                    <div class="row product-grid-4 mb-lg-20"  id="productCart" style="margin-bottom:20px">
+                        
+                        <!--start product card-->
+                        @foreach(var product in Model)
+                        {
+                            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-xl-block mb-20">
+                                <div class="product-cart-wrap">
+                                    <div class="product-img-action-wrap">
+                                        <div class="product-img product-img-zoom">
+                                            <a asp-action="Details" asp-route-productId="@product.Id">
+                                                <img class="default-img" src="@product.ImageUrl" alt="" />
+                                                <img class="hover-img" src="@product.ImageUrl" alt="" />
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="product-action-1">
+                                            <a asp-action="Wishlist" asp-route-productId="@product.Id" aria-label='Add To Wishlist' class='action-btn'><i class="fi-rs-heart"></i></a>
+                                            <a aria-label='Compare' asp-route-productId="@product.Id" class='action-btn' ><i class="fi-rs-shuffle"></i></a>
+                                            <a asp-action="QuickView" asp-route-productId="@product.Id" asp-controller="Home" aria-label="Quick view" class="action-btn" onclick="showQuickViewModal()"><i class="fi-rs-eye"></i></a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="product-content-wrap">
+                                        <div class="product-category">
+                                            <a >@product.Category.Name</a>
+                                        </div>
+                                        <h2><a asp-action="Details" asp-route-productId="@product.Id">@product.Name</a></h2>
+                                        <div class="product-rate-cover">
+                                            <div class="product-rate d-inline-block">
+                                                <div class="product-rating" style="width: 50%"></div>
+                                            </div>
+                                            <span class="font-small ml-5 text-muted"> (2.0)</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-small text-muted">By <a href='vendor-details-1.html'>Acer</a></span>
+                                        </div>
+                                        <div class="product-card-bottom">
+                                            <div class="product-price">
+                                                <span>R.s @product.Price.ToString("N0")</span>
+                                               @*  <span class="old-price">$24.8</span> *@
+                                            </div>
+                                            <div class="add-cart">
+                                                <a class='add' asp-action="InsertToCart" asp-route-productId="@product.Id"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        
+                        <!--end product card-->
+                    </div>
+                    <!--End product-grid-4-->
+                </div>
+                <!--En tab one-->
+                <div class="tab-pane fade" id="tab-two" role="tabpanel" aria-labelledby="tab-two">
+                    <div class="row product-grid-4">
+                        
+                        <!--start product card-->
+                        @foreach (var laptop in ViewBag.laptopCategory)
+                        {
+                            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-xl-block">
+                                <div class="product-cart-wrap">
+                                    <div class="product-img-action-wrap">
+                                        <div class="product-img product-img-zoom">
+                                            <a asp-action="Details" asp-route-productId="@laptop.Id">
+
+                                                <img class="" src="@laptop.ImageUrl" alt="" />
+                                                <img class="hover-img" src="@laptop.ImageUrl" alt="" />
+                                            </a>
+                                        </div>
+                                        <div class="product-action-1">
+                                            <a aria-label='Add To Wishlist' class='action-btn' href='shop-wishlist.html'><i class="fi-rs-heart"></i></a>
+                                            <a aria-label='Compare' class='action-btn' href='shop-compare.html'><i class="fi-rs-shuffle"></i></a>
+                                            <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content-wrap">
+                                        <div class="product-category">
+                                            <a href='shop-grid-right.html'>@laptop.Category.Name</a>
+                                        </div>
+                                        <h2><a href='shop-product-right.html'>@laptop.Name</a></h2>
+                                        <div class="product-rate-cover">
+                                            <div class="product-rate d-inline-block">
+                                                <div class="product-rating" style="width: 50%"></div>
+                                            </div>
+                                            <span class="font-small ml-5 text-muted"> (2.0)</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-small text-muted">By <a href='vendor-details-1.html'>Tyson</a></span>
+                                        </div>
+                                        <div class="product-card-bottom">
+                                            <div class="product-price">
+                                                <span>R.s @laptop.Price.ToString("N0")</span>
+                                                @* <span class="old-price">$24.8</span> *@
+                                            </div>
+                                            <div class="add-cart">
+                                                <a class='add' href='shop-cart.html'><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        }
+                        <!--end product card-->
+                    </div>
+                    <!--End product-grid-4-->
+                </div>
+                <!--En tab two-->
+                <div class="tab-pane fade" id="tab-three" role="tabpanel" aria-labelledby="tab-three">
+                    <div class="row product-grid-4">
+                        
+                        <!--start product card-->
+                         @foreach (var mobile in ViewBag.mobileCategory)
+                        {
+                            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6  d-xl-block">
+                                <div class="product-cart-wrap">
+                                    <div class="product-img-action-wrap">
+                                        <div class="product-img product-img-zoom">
+                                            <a asp-action="Details" asp-route-productId="@mobile.Id">
+
+                                                <img class="" src="@mobile.ImageUrl" alt="" />
+                                                <img class="hover-img" src="@mobile.ImageUrl" alt="" />
+                                            </a>
+                                        </div>
+                                        <div class="product-action-1">
+                                            <a aria-label='Add To Wishlist' class='action-btn' href='shop-wishlist.html'><i class="fi-rs-heart"></i></a>
+                                            <a aria-label='Compare' class='action-btn' href='shop-compare.html'><i class="fi-rs-shuffle"></i></a>
+                                            <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content-wrap">
+                                        <div class="product-category">
+                                            <a href='shop-grid-right.html'>@mobile.Category.Name</a>
+                                        </div>
+                                        <h2><a href='shop-product-right.html'>@mobile.Name</a></h2>
+                                        <div class="product-rate-cover">
+                                            <div class="product-rate d-inline-block">
+                                                <div class="product-rating" style="width: 50%"></div>
+                                            </div>
+                                            <span class="font-small ml-5 text-muted"> (2.0)</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-small text-muted">By <a href='vendor-details-1.html'>Tyson</a></span>
+                                        </div>
+                                        <div class="product-card-bottom">
+                                            <div class="product-price">
+                                                <span>R.s @mobile.Price.ToString("N0")</span>
+                                                @* <span class="old-price">$24.8</span> *@
+                                            </div>
+                                            <div class="add-cart">
+                                                <a class='add' href='shop-cart.html'><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        }
+                        <!--end product card-->
+                    </div>
+                    <!--End product-grid-4-->
+                </div>
+                <!--En tab three-->
+                <div class="tab-pane fade" id="tab-four" role="tabpanel" aria-labelledby="tab-four">
+                    <div class="row product-grid-4">
+
+                        <!--start product card-->
+                        @foreach (var airbud in ViewBag.earbudCategory)
+                        {
+                            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-xl-block">
+                                <div class="product-cart-wrap">
+                                    <div class="product-img-action-wrap">
+                                        <div class="product-img product-img-zoom">
+                                            <a asp-action="Details" asp-route-productId="@airbud.Id">
+
+                                                <img class="" src="@airbud.ImageUrl" alt="" />
+                                                <img class="hover-img" src="@airbud.ImageUrl" alt="" />
+                                            </a>
+                                        </div>
+                                        <div class="product-action-1">
+                                            <a aria-label='Add To Wishlist' class='action-btn' href='shop-wishlist.html'><i class="fi-rs-heart"></i></a>
+                                            <a aria-label='Compare' class='action-btn' href='shop-compare.html'><i class="fi-rs-shuffle"></i></a>
+                                            <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content-wrap">
+                                        <div class="product-category">
+                                            <a href='shop-grid-right.html'>@airbud.Category.Name</a>
+                                        </div>
+                                        <h2><a href='shop-product-right.html'>@airbud.Name</a></h2>
+                                        <div class="product-rate-cover">
+                                            <div class="product-rate d-inline-block">
+                                                <div class="product-rating" style="width: 50%"></div>
+                                            </div>
+                                            <span class="font-small ml-5 text-muted"> (2.0)</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-small text-muted">By <a href='vendor-details-1.html'>Tyson</a></span>
+                                        </div>
+                                        <div class="product-card-bottom">
+                                            <div class="product-price">
+                                                <span>R.s @airbud.Price.ToString("N0")</span>
+                                                @* <span class="old-price">$24.8</span> *@
+                                            </div>
+                                            <div class="add-cart">
+                                                <a class='add' href='shop-cart.html'><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        }
+                        <!--end product card-->
+                    </div>
+                    <!--End product-grid-4-->
+                </div>
+                <!--En tab four-->
+                <div class="tab-pane fade" id="tab-five" role="tabpanel" aria-labelledby="tab-five">
+                    <div class="row product-grid-4">
+                        
+                        <!--start product card-->
+                        @foreach (var smartwatch in ViewBag.smartwatchCategory)
+                        {
+                            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-xl-block">
+                                <div class="product-cart-wrap">
+                                    <div class="product-img-action-wrap">
+                                        <div class="product-img product-img-zoom">
+                                            <a asp-action="Details" asp-route-productId="@smartwatch.Id">
+
+                                                <img class="" src="@smartwatch.ImageUrl" alt="" />
+                                                <img class="hover-img" src="@smartwatch.ImageUrl" alt="" />
+                                            </a>
+                                        </div>
+                                        <div class="product-action-1">
+                                            <a aria-label='Add To Wishlist' class='action-btn' href='shop-wishlist.html'><i class="fi-rs-heart"></i></a>
+                                            <a aria-label='Compare' class='action-btn' href='shop-compare.html'><i class="fi-rs-shuffle"></i></a>
+                                            <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content-wrap">
+                                        <div class="product-category">
+                                            <a href='shop-grid-right.html'>@smartwatch.Category.Name</a>
+                                        </div>
+                                        <h2><a href='shop-product-right.html'>@smartwatch.Name</a></h2>
+                                        <div class="product-rate-cover">
+                                            <div class="product-rate d-inline-block">
+                                                <div class="product-rating" style="width: 50%"></div>
+                                            </div>
+                                            <span class="font-small ml-5 text-muted"> (2.0)</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-small text-muted">By <a href='vendor-details-1.html'>Tyson</a></span>
+                                        </div>
+                                        <div class="product-card-bottom">
+                                            <div class="product-price">
+                                                <span>R.s @smartwatch.Price.ToString("N0")</span>
+                                                @* <span class="old-price">$24.8</span> *@
+                                            </div>
+                                            <div class="add-cart">
+                                                <a class='add' href='shop-cart.html'><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        }
+                        <!--end product card-->
+                    </div>
+                    <!--End product-grid-4-->
+                </div>
+                <!--En tab five-->
+                <div class="tab-pane fade" id="tab-six" role="tabpanel" aria-labelledby="tab-six">
+                    <div class="row product-grid-4">
+                        
+                        <!--start product card-->
+                        @foreach (var tv in ViewBag.televisionCategory)
+                        {
+                            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 d-xl-block">
+                                <div class="product-cart-wrap">
+                                    <div class="product-img-action-wrap">
+                                        <div class="product-img product-img-zoom">
+                                            <a asp-action="Details" asp-route-productId="@tv.Id">
+
+                                                <img class="" src="@tv.ImageUrl" alt="" />
+                                                <img class="hover-img" src="@tv.ImageUrl" alt="" />
+                                            </a>
+                                        </div>
+                                        <div class="product-action-1">
+                                            <a aria-label='Add To Wishlist' class='action-btn' href='shop-wishlist.html'><i class="fi-rs-heart"></i></a>
+                                            <a aria-label='Compare' class='action-btn' href='shop-compare.html'><i class="fi-rs-shuffle"></i></a>
+                                            <a aria-label="Quick view" class="action-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-eye"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content-wrap">
+                                        <div class="product-category">
+                                            <a href='shop-grid-right.html'>@tv.Category.Name</a>
+                                        </div>
+                                        <h2><a href='shop-product-right.html'>@tv.Name</a></h2>
+                                        <div class="product-rate-cover">
+                                            <div class="product-rate d-inline-block">
+                                                <div class="product-rating" style="width: 50%"></div>
+                                            </div>
+                                            <span class="font-small ml-5 text-muted"> (2.0)</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-small text-muted">By <a href='vendor-details-1.html'>Tyson</a></span>
+                                        </div>
+                                        <div class="product-card-bottom">
+                                            <div class="product-price">
+                                                <span>R.s @tv.Price.ToString("N0")</span>
+                                                @* <span class="old-price">$24.8</span> *@
+                                            </div>
+                                            <div class="add-cart">
+                                                <a class='add' href='shop-cart.html'><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        }
+                        <!--end product card-->
+                    </div>
+                    <!--End product-grid-4-->
+                </div>
+                
+            </div>
+            <!--End tab-content-->
+        </div>
+    </section>
+    <!--Products Tabs-->
+    
+    @* <!--End Best Sales-->
+    <section class="section-padding pb-5 p-30">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="">Deals Of The Day</h3>
+                <a class='show-all' href='shop-grid-right.html'>
+                    All Deals
+                    <i class="fi-rs-angle-right"></i>
+                </a>
+            </div>
+            <div class="row">
+                
+                <div class="col-xl-3 col-lg-4 col-md-6 d-none d-xl-block">
+                    <div class="product-cart-wrap style-2">
+                        <div class="product-img-action-wrap">
+                            <div class="product-img">
+                                <a href='shop-product-right.html'>
+                                    <img src="assets/imgs/banner/banner-8.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-content-wrap">
+                            <div class="deals-countdown-wrap">
+                                <div class="deals-countdown" data-countdown="2025/02/25 00:00:00"></div>
+                            </div>
+                            <div class="deals-content">
+                                <h2><a href='shop-product-right.html'>Simply Lemonade with Raspberry Juice</a></h2>
+                                <div class="product-rate-cover">
+                                    <div class="product-rate d-inline-block">
+                                        <div class="product-rating" style="width: 80%"></div>
+                                    </div>
+                                    <span class="font-small ml-5 text-muted"> (3.0)</span>
+                                </div>
+                                <div>
+                                    <span class="font-small text-muted">By <a href='vendor-details-1.html'>Yoplait</a></span>
+                                </div>
+                                <div class="product-card-bottom">
+                                    <div class="product-price">
+                                        <span>$15.85</span>
+                                        <span class="old-price">$16.8</span>
+                                    </div>
+                                    <div class="add-cart">
+                                        <a class='add' href='shop-cart.html'><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Deals--> *@
+    @* <section class="section-padding mb-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0">
+                    <h4 class="section-title style-1 mb-30 animated animated">Top Selling</h4>
+                    <div class="product-list-small animated animated">
+                        
+                        <article class="row align-items-center hover-up">
+                            <figure class="col-md-4 mb-0">
+                                <a href='shop-product-right.html'><img src="assets/imgs/shop/thumbnail-3.jpg" alt="" /></a>
+                            </figure>
+                            <div class="col-md-8 mb-0">
+                                <h6>
+                                    <a href='shop-product-right.html'>Nestle Original Coffee-Mate Coffee Creamer</a>
+                                </h6>
+                                <div class="product-rate-cover">
+                                    <div class="product-rate d-inline-block">
+                                        <div class="product-rating" style="width: 90%"></div>
+                                    </div>
+                                    <span class="font-small ml-5 text-muted"> (4.0)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span>$32.85</span>
+                                    <span class="old-price">$33.8</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-md-0">
+                    <h4 class="section-title style-1 mb-30 animated animated">Trending Products</h4>
+                    <div class="product-list-small animated animated">
+                        
+                        <article class="row align-items-center hover-up">
+                            <figure class="col-md-4 mb-0">
+                                <a href='shop-product-right.html'><img src="assets/imgs/shop/thumbnail-6.jpg" alt="" /></a>
+                            </figure>
+                            <div class="col-md-8 mb-0">
+                                <h6>
+                                    <a href='shop-product-right.html'>Naturally Flavored Cinnamon Vanilla Light Roast Coffee</a>
+                                </h6>
+                                <div class="product-rate-cover">
+                                    <div class="product-rate d-inline-block">
+                                        <div class="product-rating" style="width: 90%"></div>
+                                    </div>
+                                    <span class="font-small ml-5 text-muted"> (4.0)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span>$32.85</span>
+                                    <span class="old-price">$33.8</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0 d-none d-lg-block">
+                    <h4 class="section-title style-1 mb-30 animated animated">Recently added</h4>
+                    <div class="product-list-small animated animated">
+                        
+                        <article class="row align-items-center hover-up">
+                            <figure class="col-md-4 mb-0">
+                                <a href='shop-product-right.html'><img src="assets/imgs/shop/thumbnail-9.jpg" alt="" /></a>
+                            </figure>
+                            <div class="col-md-8 mb-0">
+                                <h6>
+                                    <a href='shop-product-right.html'>Oroweat Country Buttermilk Bread</a>
+                                </h6>
+                                <div class="product-rate-cover">
+                                    <div class="product-rate d-inline-block">
+                                        <div class="product-rating" style="width: 90%"></div>
+                                    </div>
+                                    <span class="font-small ml-5 text-muted"> (4.0)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span>$32.85</span>
+                                    <span class="old-price">$33.8</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0 d-none d-xl-block">
+                    <h4 class="section-title style-1 mb-30 animated animated">Top Rated</h4>
+                    <div class="product-list-small animated animated">
+                        
+                        <article class="row align-items-center hover-up">
+                            <figure class="col-md-4 mb-0">
+                                <a href='shop-product-right.html'><img src="assets/imgs/shop/thumbnail-12.jpg" alt="" /></a>
+                            </figure>
+                            <div class="col-md-8 mb-0">
+                                <h6>
+                                    <a href='shop-product-right.html'>All Natural Italian-Style Chicken Meatballs</a>
+                                </h6>
+                                <div class="product-rate-cover">
+                                    <div class="product-rate d-inline-block">
+                                        <div class="product-rating" style="width: 90%"></div>
+                                    </div>
+                                    <span class="font-small ml-5 text-muted"> (4.0)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span>$32.85</span>
+                                    <span class="old-price">$33.8</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End 4 columns--> *@
+    @* <section class="popular-categories section-padding">
+        <div class="container">
+            <div class="section-title">
+                <div class="title">
+                    <h3>Shop by Categories</h3>
+                    <a class='show-all' href='shop-grid-right.html'>
+                        All Categories
+                        <i class="fi-rs-angle-right"></i>
+                    </a>
+                </div>
+                <div class="slider-arrow slider-arrow-2 flex-right carausel-8-columns-arrow" id="carausel-8-columns-arrows"></div>
+            </div>
+            <div class="carausel-8-columns-cover position-relative">
+                <div class="carausel-8-columns" id="carausel-8-columns">
+                    <div class="card-1">
+                        <figure class="img-hover-scale overflow-hidden">
+                            <a href='shop-grid-right.html'><img src="~/assets/imgs/theme/icons/laptop-solid.svg" alt="" /></a>
+                        </figure>
+                        <h6>
+                            <a href='shop-grid-right.html'>Laptop</a>
+                        </h6>
+                    </div>
+                    <div class="card-1">
+                        <figure class="img-hover-scale overflow-hidden">
+                            <a href='shop-grid-right.html'><img src="~/assets/imgs/theme/icons/mobile.svg" alt="" /></a>
+                        </figure>
+                        <h6>
+                            <a href='shop-grid-right.html'>Mobiles</a>
+                        </h6>
+                    </div>
+                    <div class="card-1">
+                        <figure class="img-hover-scale overflow-hidden">
+                            <a href='shop-grid-right.html'><img src="~/assets/imgs/theme/icons/headphones-solid.svg" alt="" /></a>
+                        </figure>
+                        <h6>
+                            <a href='shop-grid-right.html'>Headphone</a>
+                        </h6>
+                    </div>
+                    <div class="card-1">
+                        <figure class="img-hover-scale overflow-hidden">
+                            <a href='shop-grid-right.html'><img src="~/assets/imgs/theme/icons/clock-solid.svg" alt="" /></a>
+                        </figure>
+                        <h6>
+                            <a href='shop-grid-right.html'>Accessories</a>
+                        </h6>
+                    </div>
+                    <div class="card-1">
+                        <figure class="img-hover-scale overflow-hidden">
+                            <a href='shop-grid-right.html'><img src="~/assets/imgs/theme/icons/tv-solid.svg" alt="" /></a>
+                        </figure>
+                        <h6>
+                            <a href='shop-grid-right.html'>Television</a>
+                        </h6>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section> *@
+    <!--End category slider-->
+</main>
+
+<script>
+    function showQuickViewModal() {
+        $('#quickViewModal').modal('show');
+    }
+</script>

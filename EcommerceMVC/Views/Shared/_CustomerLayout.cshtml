@@ -1,0 +1,517 @@
+﻿
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="utf-8" />
+    <title>GadgetGhar - Tech Product at Your Hand </title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/assets/imgs/theme/favicon.svg" />
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="~/assets/css/plugins/slider-range.css" />
+    <link rel="stylesheet" href="~/assets/css/main5103.css?v=6.0" />
+</head>
+
+<body>
+   
+    <header class="header-area header-style-1 header-height-2">
+        
+        <div class="header-middle header-middle-ptb-1 d-none d-lg-block">
+            <div class="container">
+                <div class="header-wrap">
+                    <div class="logo logo-width-1 ml-10">
+                        <a asp-area="Customer" asp-controller="Home" asp-action="Index"><img src="~/site_logo/logo.svg" alt="logo" /></a>
+                    </div>
+                    <div class="header-right">
+                        <div class="search-style-2">
+                            <form method="get" action="@Url.Action("Search", "Home")">
+                                <select class="select-active top-category" name="category">
+                                    <option>All Categories</option>
+                                    <option>Laptop</option>
+                                    <option>Mobile</option>
+                                    <option>Earbud</option>
+                                    <option>Smartwatch</option>
+                                    <option>Television</option>
+                                    
+                                </select>
+                                <input type="text" name="searchText" placeholder="Search for items..." />
+                            </form>
+                        </div>
+                        <div class="header-action-right pl-10">
+                            <div class="header-action-2">
+                                <!--compare-->
+                                <div class="header-action-icon-2">
+                                    <a asp-area="Customer" asp-controller="Home" asp-action="Compare">
+                                        <img class="svgInject" alt="Nest" src="~/assets/imgs/theme/icons/icon-compare.svg" />
+                                        @* <span class="pro-count blue"></span> *@
+                                    </a>
+                                    <a asp-area="Customer" asp-controller="Home" asp-action="Compare"><span class="lable ml-0">Compare</span></a>
+                                </div>
+                                <!--wishlist-->
+                                <div class="header-action-icon-2">
+                                    <a asp-area="Customer" asp-controller="Wishlist" asp-action="Index">
+                                        <img class="svgInject" alt="Nest" src="~/assets/imgs/theme/icons/icon-heart.svg" />
+                                        @* <span class="pro-count blue"></span> *@
+                                    </a>
+                                    <a asp-area="Customer" asp-controller="Wishlist" asp-action="Index"><span class="lable">Wishlist</span></a>
+                                </div>
+                                <!--cart-->
+                                <div class="header-action-icon-2">
+                                    <a class='mini-cart-icon' asp-area="Customer" asp-controller="Cart" asp-action="Index">
+                                        <img alt="Nest" src="~/assets/imgs/theme/icons/icon-cart.svg" />
+                                        @* <span class="pro-count blue"></span> *@
+                                    </a>
+                                    <a asp-area="Customer" asp-controller="Cart" asp-action="Index"><span class="lable">Cart</span></a>
+                                    @* <!--cart dropdown-->
+                                    <div class="cart-dropdown-wrap cart-dropdown-hm2">
+                                        <ul>
+                                            <li>
+                                                <div class="shopping-cart-img">
+                                                    <a href='shop-product-right.html'><img alt="Nest" src="~/assets/imgs/shop/thumbnail-3.jpg" /></a>
+                                                </div>
+                                                <div class="shopping-cart-title">
+                                                    <h4><a href='shop-product-right.html'>Daisy Casual Bag</a></h4>
+                                                    <h4><span>1 × </span>$800.00</h4>
+                                                </div>
+                                                <div class="shopping-cart-delete">
+                                                    <a href="#"><i class="fi-rs-cross-small"></i></a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="shopping-cart-img">
+                                                    <a href='shop-product-right.html'><img alt="Nest" src="~/assets/imgs/shop/thumbnail-2.jpg" /></a>
+                                                </div>
+                                                <div class="shopping-cart-title">
+                                                    <h4><a href='shop-product-right.html'>Corduroy Shirts</a></h4>
+                                                    <h4><span>1 × </span>$3200.00</h4>
+                                                </div>
+                                                <div class="shopping-cart-delete">
+                                                    <a href="#"><i class="fi-rs-cross-small"></i></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="shopping-cart-footer">
+                                            <div class="shopping-cart-total">
+                                                <h4>Total <span>$4000.00</span></h4>
+                                            </div>
+                                            <div class="shopping-cart-button">
+                                                <a class='outline' asp-controller="Cart" asp-action="Index">View cart</a>
+                                                <a href='shop-checkout.html'>Checkout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--cart dropdown end--> *@
+                                </div>
+                                <div class="header-action-icon-2">
+                                    <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+                                        <img class="svgInject" alt="Nest" src="~/assets/imgs/theme/icons/icon-user.svg" />
+                                    </a>
+                                    <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage"><span class="lable ml-0">Account</span></a>
+                                    <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
+                                        <ul>
+                                            <partial name="_LoginPartial" />
+                                            
+                                            
+                                            <li><a>My Wishlist</a></li>
+                                            
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--category dropdown start-->
+        <div class="header-bottom header-bottom-bg-color sticky-bar">
+            <div class="container">
+                <div class="header-wrap header-space-between position-relative">
+                    <div class="logo logo-width-1 d-block d-lg-none">
+                        <a href='index.html'><img src="~/site_logo/logo.svg" alt="logo" /></a>
+                    </div>
+                    <div class="header-nav d-none d-lg-flex">
+                        <div class="main-categori-wrap d-none d-lg-block">
+                            <a class="categories-button-active" href="#">
+                                <span class="fi-rs-apps"></span>  All Categories
+                                <i class="fi-rs-angle-down"></i>
+                            </a>
+                            <div class="categories-dropdown-wrap categories-dropdown-active-large font-heading">
+                                @* <div class="d-flex categori-dropdown-inner"> *@
+                                    @* <form method="get" action="@Url.Action("CategoryResult", "Home")">
+                                    <ul>
+                                        <li>
+                                            <a asp-action="CategoryResult" name="laptop"> <img src="~/assets/imgs/theme/icons/laptop-solid.svg" alt="" />Laptop</a>
+                                        </li>
+                                        <li>
+                                            <a href='shop-grid-right.html'> <img src="~/assets/imgs/theme/icons/mobile.svg" alt="" />Moblies</a>
+                                        </li>
+                                        <li>
+                                            <a href='shop-grid-right.html'> <img src="~/assets/imgs/theme/icons/headphones-solid.svg" alt="" />Earbuds</a>
+                                        </li>
+                                        <li>
+                                            <a href='shop-grid-right.html'> <img src="~/assets/imgs/theme/icons/clock-solid.svg" alt="" />Smartwatches</a>
+                                        </li>
+                                        <li>
+                                            <a href='shop-grid-right.html'> <img src="~/assets/imgs/theme/icons/tv-solid.svg" alt="" />Television</a>
+                                        </li>
+                                       
+                                    </ul>
+                                    </form> *@
+                                    <form method="get" action="@Url.Action("CategoryResult", "Home")" class="col-12">
+                                        <div>
+                                        <button type="submit" name="category" value="Laptop" id="categoryBtn" >
+                                                 Laptop
+                                        </button>
+                                       @*  <img src="~/assets/imgs/theme/icons/laptop-solid.svg" alt="" /> *@
+                                        </div>
+                                        <div>
+                                        <button type="submit" name="category" value="Mobile" id="categoryBtn" >
+                                               @*  <img src="~/assets/imgs/theme/icons/mobile.svg" alt="" /> *@ Mobiles
+                                            </button>
+                                        </div>
+                                        <div>
+                                        <button type="submit" name="category" value="Earbud" id="categoryBtn" >
+                                               @*  <img src="~/assets/imgs/theme/icons/laptop-solid.svg" alt="" /> *@ Earbud
+                                            </button>
+                                        </div>
+                                        <div>
+                                        <button type="submit" name="category" value="Smartwatch" id="categoryBtn" >
+                                                @* <img src="~/assets/imgs/theme/icons/mobile.svg" alt="" />  *@Smartwatch
+                                            </button>
+                                        </div>
+                                        <div>
+                                        <button type="submit" name="category" value="Television" id="categoryBtn" >
+                                               @*  <img src="~/assets/imgs/theme/icons/mobile.svg" alt="" /> *@ Television
+                                            </button>
+                                        </div>
+                                        <!-- Add more buttons for other categories -->
+                                    </form>
+
+                                  
+                               @*      
+                                </div> *@
+                                
+                            </div>
+                        </div>
+                        <!--Category dropdown end-->
+                        <!--navbar-->
+                        <div class="main-menu main-menu-padding-1 main-menu-lh-2 d-none d-lg-block font-heading">
+                            <nav>
+                                <ul>
+                                   
+                                    <li>
+                                        <a asp-area="Customer" asp-controller="Home" asp-action="Index">Home</a>
+                                        
+                                    </li>
+                                   
+                                    <li>
+                                        <a asp-area="Customer" asp-controller="Home" asp-action="Shop">Shop </a>
+                                        
+                                    </li>
+                                    <li>
+                                        <a asp-area="Customer" asp-controller="Home" asp-action="About">About</a>
+                                    </li>
+                                    @if (User.IsInRole(SD.Role_Admin))
+                                    {
+                                        <li>
+                                            <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Admin</a>
+                                        </li>
+                                    }
+                                    
+
+
+                                   
+                                        
+                                   
+                                    
+                                    
+                                    <li>
+                                        <a asp-area="Customer" asp-controller="Home" asp-action="Contact">Contact</a>
+                                    </li>
+                                   
+                                    <partial name="_LoginPartial" />
+
+
+                                </ul>
+                                 
+                                   
+                                    
+                                
+                                
+                                
+                            </nav>
+                        </div>
+                    </div>
+                    
+                    <div class="header-action-icon-2 d-block d-lg-none">
+                        <div class="burger-icon burger-icon-white">
+                            <span class="burger-icon-top"></span>
+                            <span class="burger-icon-mid"></span>
+                            <span class="burger-icon-bottom"></span>
+                        </div>
+                    </div>
+                    <!--tablet-->
+                    <div class="header-action-right d-block d-lg-none">
+                        <div class="header-action-2">
+                            <div class="header-action-icon-2">
+                                <a href='shop-wishlist.html'>
+                                    <img alt="Nest" src="~/assets/imgs/theme/icons/icon-heart.svg" />
+                                    @* <span class="pro-count white"></span> *@
+                                </a>
+                            </div>
+                            <div class="header-action-icon-2">
+                                <a class='mini-cart-icon' href='shop-cart.html'>
+                                    <img alt="Nest" src="~/assets/imgs/theme/icons/icon-cart.svg" />
+                                    @* <span class="pro-count white"></span> *@
+                                </a>
+                                <!--cart quick view-->
+                                <div class="cart-dropdown-wrap cart-dropdown-hm2">
+                                    <ul>
+                                        <li>
+                                            <div class="shopping-cart-img">
+                                                <a href='shop-product-right.html'><img alt="Nest" src="~/assets/imgs/shop/thumbnail-3.jpg" /></a>
+                                            </div>
+                                            <div class="shopping-cart-title">
+                                                <h4><a href='shop-product-right.html'>Plain Striola Shirts</a></h4>
+                                                <h3><span>1 × </span>$800.00</h3>
+                                            </div>
+                                            <div class="shopping-cart-delete">
+                                                <a href="#"><i class="fi-rs-cross-small"></i></a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="shopping-cart-img">
+                                                <a href='shop-product-right.html'><img alt="Nest" src="~/assets/imgs/shop/thumbnail-4.jpg" /></a>
+                                            </div>
+                                            <div class="shopping-cart-title">
+                                                <h4><a href='shop-product-right.html'>Macbook Pro 2024</a></h4>
+                                                <h3><span>1 × </span>$3500.00</h3>
+                                            </div>
+                                            <div class="shopping-cart-delete">
+                                                <a href="#"><i class="fi-rs-cross-small"></i></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="shopping-cart-footer">
+                                        <div class="shopping-cart-total">
+                                            <h4>Total <span>$383.00</span></h4>
+                                        </div>
+                                        <div class="shopping-cart-button">
+                                            <a href='shop-cart.html'>View cart</a>
+                                            <a href='shop-checkout.html'>Checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- mobile hamburger menu start -->
+    <div class="mobile-header-active mobile-header-wrapper-style">
+        <div class="mobile-header-wrapper-inner">
+            <div class="mobile-header-top">
+                <div class="mobile-header-logo">
+                    <a href='index.html'><img src="~/site_logo/logo.svg" alt="logo" /></a>
+                </div>
+                <div class="mobile-menu-close close-style-wrap close-style-position-inherit">
+                    <button class="close-style search-close">
+                        <i class="icon-top"></i>
+                        <i class="icon-bottom"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-header-content-area">
+                <div class="mobile-search search-style-3 mobile-header-border">
+                    <form action="#">
+                        <input type="text" placeholder="Search for items…" />
+                        <button type="submit"><i class="fi-rs-search"></i></button>
+                    </form>
+                </div>
+                <div class="mobile-menu-wrap mobile-header-border">
+                    
+                    <nav>
+                        <ul class="mobile-menu font-heading">
+                            <li>
+                                <a asp-area="Customer" asp-controller="Home" asp-action="Index">Home</a>
+                                
+                            </li>
+                            <li>
+                                <a asp-area="Customer" asp-controller="Home" asp-action="Shop">Shop </a>
+
+                            </li>
+                            <li>
+                                <a asp-area="Customer" asp-controller="Home" asp-action="About">About</a>
+                            </li>
+                           
+
+                            <li>
+                                <a asp-area="Customer" asp-controller="Home" asp-action="Contact">Contact</a>
+                            </li>
+                            @if (User.IsInRole(SD.Role_Admin))
+                            {
+                                <li>
+                                    <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Admin</a>
+                                </li>
+                            }
+
+
+                            <partial name="_LoginPartial" />
+
+                            
+                            
+                            
+                            
+                            
+                            
+                        </ul>
+                    </nav>
+                    <!-- mobile menu end -->
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <!--End header-->
+    
+    <!--Render your view here-->
+    <div>
+        <main>
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <!--footer start-->
+    <footer class="main">
+        
+        <section class="section-padding footer-mid">
+            <div class="container pt-15 pb-20">
+                <div class="row d-flex justify-content-around">
+                    <div class="col-12 mb-30">
+                        <div class="footer-bottom"></div>
+                    </div>
+                    <div class="col mt-20 ml-lg-5">
+                        <div class="widget-about font-md mb-md-3 mb-lg-3 mb-xl-0">
+                            <div class=" mb-20">
+                                <a asp-area="Customer" asp-controller="Home" asp-action="Index" class='mb-15'><img height="" width="250px" src="~/site_logo/logo.svg" alt="logo" /></a>
+                                
+                            </div>
+                            <ul class="contact-infor">
+                                <li><img src="~/assets/imgs/theme/icons/icon-location.svg" alt="" /><strong>Address: </strong> <span>Kirtipur, Kathmandu</span></li>
+                                <li><img src="~/assets/imgs/theme/icons/icon-contact.svg" alt="" /><strong>Call Us:</strong><span>9865667843</span></li>
+                                <li><img src="~/assets/imgs/theme/icons/icon-email-2.svg" alt="" /><strong>Email:</strong><span>utsabsingh5@gmail.com</span></li>
+                                <li><img src="~/assets/imgs/theme/icons/icon-clock.svg" alt="" /><strong>Hours:</strong><span>Sun - Sat</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-link-widget col ">
+                        <h4 class="widget-title">Company</h4>
+                        <ul class="footer-list mb-sm-5 mb-md-0">
+                            <li><a asp-area="Customer" asp-controller="Home" asp-action="About">About Us</a></li>
+                            
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a asp-area="Customer" asp-controller="Home" asp-action="Contact">Contact Us</a></li>
+                            <li><a href="#">Support Center</a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="footer-link-widget col">
+                        <h4 class="widget-title">Account</h4>
+                        <ul class="footer-list mb-sm-5 mb-md-0">                          
+                            <li><a href="#">View Cart</a></li>
+                            <li><a href="#">My Wishlist</a></li>
+                            <li><a href="#">Track My Order</a></li>
+                            <li><a href="#">Help Ticket</a></li>
+                            <li><a href="#">Shipping Details</a></li>
+                            <li><a href="#">Compare products</a></li>
+                        </ul>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </section>
+        <div class="container p-20">
+            <div class="row align-items-end">
+                <div class="col-12 mb-30">
+                    <div class="footer-bottom"></div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <p class="font-sm mb-0">&copy; 2024, <strong class="text-brand">GadgetGhar</strong> - Fullfilling Your Tech Needs <br />All rights reserved</p>
+                </div>
+                
+                <div class="col-xl-6 col-lg-6 col-md-6 text-end d-none d-md-block">
+                    <div class="mobile-social-icon">
+                        <h6>Follow Us</h6>
+                        <a href="#"><img src="~/assets/imgs/theme/icons/icon-facebook-white.svg" alt="" /></a>
+                        <a href="#"><img src="~/assets/imgs/theme/icons/icon-twitter-white.svg" alt="" /></a>
+                        <a href="#"><img src="~/assets/imgs/theme/icons/icon-instagram-white.svg" alt="" /></a>
+                        <a href="#"><img src="~/assets/imgs/theme/icons/icon-pinterest-white.svg" alt="" /></a>
+                        <a href="#"><img src="~/assets/imgs/theme/icons/icon-youtube-white.svg" alt="" /></a>
+                    </div>
+                    <p class="font-sm">Up to 15% discount on your first subscribe</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+   @*  <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="text-center">
+                    <img src="assets/imgs/theme/loading.gif" alt="" />
+                </div>
+            </div>
+        </div>
+    </div> *@
+    <!-- Vendor JS-->
+    <script src="~/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="~/assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="~/assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+    <script src="~/assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/js/plugins/slick.js"></script>
+    <script src="~/assets/js/plugins/jquery.syotimer.min.js"></script>
+    <script src="~/assets/js/plugins/wow.js"></script>
+    <script src="~/assets/js/plugins/perfect-scrollbar.js"></script>
+    <script src="~/assets/js/plugins/slider-range.js"></script>
+    <script src="~/assets/js/plugins/magnific-popup.js"></script>
+    <script src="~/assets/js/plugins/select2.min.js"></script>
+    <script src="~/assets/js/plugins/waypoints.js"></script>
+    <script src="~/assets/js/plugins/counterup.js"></script>
+    <script src="~/assets/js/plugins/jquery.countdown.min.js"></script>
+    <script src="~/assets/js/plugins/images-loaded.js"></script>
+    <script src="~/assets/js/plugins/isotope.js"></script>
+    <script src="~/assets/js/plugins/scrollup.js"></script>
+    <script src="~/assets/js/plugins/jquery.vticker-min.js"></script>
+    <script src="~/assets/js/plugins/jquery.theia.sticky.js"></script>
+    <script src="~/assets/js/plugins/jquery.elevatezoom.js"></script>
+    <!-- Template  JS -->
+    <script src="~/assets/js/main5103.js?v=6.0"></script>
+    <script src="~/assets/js/shop5103.js?v=6.0"></script>
+    @RenderSection("Scripts", required: false)
+
+</body>
+
+
+<!-- Mirrored from nest-frontend-v6.netlify.app/index-2 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Apr 2024 18:23:52 GMT -->
+</html>
+
+
