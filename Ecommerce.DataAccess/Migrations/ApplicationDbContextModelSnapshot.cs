@@ -44,36 +44,6 @@ namespace Ecommerce.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CreatedAt = new DateTime(2024, 3, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "Laptop",
-                            UpdatedAt = new DateTime(2023, 5, 7, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CreatedAt = new DateTime(2024, 3, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "Mobile",
-                            UpdatedAt = new DateTime(2023, 5, 7, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 3,
-                            CreatedAt = new DateTime(2024, 3, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "Headphones",
-                            UpdatedAt = new DateTime(2023, 5, 7, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 4,
-                            CreatedAt = new DateTime(2024, 3, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "Accessories",
-                            UpdatedAt = new DateTime(2023, 5, 7, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        });
                 });
 
             modelBuilder.Entity("Ecommerce.Models.OrderDetail", b =>
@@ -219,44 +189,6 @@ namespace Ecommerce.DataAccess.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CategoryId = 0,
-                            CreatedAt = new DateTime(2023, 7, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "Closed [endoscopic] biopsy of small intestine",
-                            ImageUrl = "http://dummyimage.com/166x100.png/cc0000/ffffff",
-                            Name = "Banana Turning",
-                            Price = 483m,
-                            StockQuantity = 1,
-                            UpdatedAt = new DateTime(2024, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CategoryId = 0,
-                            CreatedAt = new DateTime(2023, 8, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "Narcoanalysis",
-                            ImageUrl = "http://dummyimage.com/231x100.png/cc0000/ffffff",
-                            Name = "Bay Leaf Fresh",
-                            Price = 1335m,
-                            StockQuantity = 2,
-                            UpdatedAt = new DateTime(2023, 5, 7, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 3,
-                            CategoryId = 0,
-                            CreatedAt = new DateTime(2023, 10, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "Arthrotomy for removal of prosthesis without replacement, elbow",
-                            ImageUrl = "http://dummyimage.com/218x100.png/5fa2dd/ffffff",
-                            Name = "Sprouts - Brussel",
-                            Price = 3789m,
-                            StockQuantity = 3,
-                            UpdatedAt = new DateTime(2023, 9, 3, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        });
                 });
 
             modelBuilder.Entity("Ecommerce.Models.ShoppingCart", b =>

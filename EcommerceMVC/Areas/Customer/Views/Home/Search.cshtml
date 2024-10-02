@@ -22,18 +22,18 @@
         <div class="row flex-row-reverse">
             <div class="col-lg-4-5">
                 <div class="shop-product-fillter">
-                    <div class="totall-product">
+                  @*   <div class="totall-product">
                         <p>
-                            We found <strong class="text-brand">@* @Model.Products.Count()< *@</strong> items
-                            @*  under Development *@
-                            @* @if (Model.FilterPrice.FromPrice != 0 && Model.FilterPrice.ToPrice != 0)
+                            We found <strong class="text-brand"> @Model.Products.Count()< </strong> items
+                             under Development 
+                             @if (Model.FilterPrice.FromPrice != 0 && Model.FilterPrice.ToPrice != 0)
                             {
                             <h1>Triggred</h1>
                             <strong class="text-brand">between Price R.s @Model.FilterPrice.FromPrice.ToString("N0")</strong>
                             <strong class="text-brand">and R.s @Model.FilterPrice.ToPrice.ToString("N0")</strong>
-                            } *@
+                            }
                         </p>
-                    </div>
+                    </div> *@
                     <div class="sort-by-product-area">
                         <div class="sort-by-cover mr-10">
                             <div class="sort-by-product-wrap">
@@ -126,10 +126,10 @@
                     }
                     <!--end product card-->
                     </div>
-                }
+                
                
                 <!--product grid-->
-                <div class="pagination-area mt-20 mb-20">
+                @* <div class="pagination-area mt-20 mb-20">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-start">
                             <li class="page-item">
@@ -144,11 +144,11 @@
                                 <a class="page-link" href="#"><i class="fi-rs-arrow-small-right"></i></a>
                             </li>
                         </ul>
-                    </nav>
+                    </nav> *@
                 </div>
-
+                
             </div>
-
+            
             @* <div class="col-lg-1-5 primary-sidebar sticky-sidebar">
                 <form method="post">
                     <div class="sidebar-widget widget-category-2 mb-30">
